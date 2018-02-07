@@ -1,0 +1,130 @@
+<html>
+<title>So, You Want to Be An Astronaut?</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/city_style.css">
+
+
+<script src="lib/prism.js"></script>
+
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/codeRed_Mcdonals.png); background-attachment: fixed; background-size: cover;">
+
+<div>
+  <span style="position: absolute; top: 20px; right: 20px;">
+  <p>Day 7<p>
+  </span>
+</div>
+
+    <story>
+        <h2>CRISIS AVERTED!</h2>
+
+        <page id="home" style="display: inline-block; float: left;">
+            <p>Congrats astronaut. You pulled through.</p>
+            <!--<button choice what-is>But what <i>is</i> CYO?</button>
+            <img src="Images/mcdonals.png" style="width: 200px;">!-->
+          </page>
+  </story>
+
+
+    <story>
+      <br><br>
+        <h2>Day 7: Pretty Much A Crisis</h2>
+        <page intro="">
+            <p>"Hey McDonalds man, you ever patched a leak?" Let's get to it.</p>
+            <p>"We also need to reset the board, you can flip switches real quick right?"</p>
+            <button choice stay-put="">Yes?</button>
+        </page>
+        <page stay-put="">
+            <p>It's quite the operation to feed the crew up here, <br>you'll be on lunch prep for the first 15 meals of your mission.</p>
+            <p>We all rotate through the kitchen.</p>
+            <a href="file:///Users/Meredith/MEGA/Winter%202018/Systems/Narrative_Website/Astronaut/crisis_Averted.html"><button choice="" investigate-rocks="">To The Moon</button>
+            <button choice="" check-tree-out>I guess nothing's changed from earth?</button>
+        </page>
+        <page talk-to-owl="">
+            <p>For a while you talk to the owl. It seems to ignore you. Suddenly, it cocks its head towards a hollow in an old tree.</p>
+            <p>You reach inside, and pull out a mysterious wooden flute.</p>
+            <event got-flute=""></event>
+            <p>"Hmm, now I've seen everything".</p>
+            <button choice taunt-owl>I ought to taunt that preposterous owl.</button>
+            <button choice look-around>Let's get moving.</button>
+        </page>
+        <page taunt-owl>
+            <p>One thing about yourself that you know for sure - you hate owls/</p>
+            <p>"Hey! Owl! You're stupid-looking!"</p>
+            <p>The owl cocks its head at you bemusedly.</p>
+            <p>What a stupid owl, you laugh.</p>
+            <p>Suddenly, the owl swoops down and carries you off. It is a big owl indeed.</p>
+            <p><i>You are never seen again.</i>
+            </p>
+            <button restart>Play again?</button>
+        </page>
+        <page investigate-rocks="">
+            <p>You walk up to the pile of rocks.</p>
+            <p>It's just a pile of rocks, you think.</p>
+            <button choice look-around>Let's get out of here.</button>
+        </page>
+        <page check-tree-out="">
+            <p>You walk up to the tree. You reckon it to be mighty old. Maybe a bazillion years or more. You notice a strange carving on the tree.</p>
+            <p>The carving depicts a great monster, twenty feet tall or more.</p>
+            <p>"Pshh. A huge monster, have you ever heard anything so ridiculous, Smeemog? ... Smee?"</p>
+            <p>You turn around, but in fact Smeemog has been eaten by a giant monster.</p>
+            <p>The monster devours you as you beg for mercy.</p>
+            <button restart>Play again?</button>
+        </page>
+        <page look-around="">
+          <p>We are focusing our efforts on settling mars, practicing manuevers on our moon, <br>and exploring unkown deep space.</p>
+          <p>What mission are you interested in friend?</p>
+          <button choice="" investigate-rocks="">To The Moon</button>
+          <button choice="" check-tree-out>Mission to Mars</button>
+          <button choice="" talk-to-owl>Somewhere Far Far Away</button>
+        </page>
+    </story>
+</body>
+<style>
+h2 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+<script>
+var i = 0;
+var txt = ""
+//document.getElementById("game_text");
+//for(var i = 0; i < txt.length; i++)
+//{
+//    alert(text[i].innerHTML);
+//}
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("game_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</html>
