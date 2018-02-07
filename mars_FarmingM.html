@@ -8,7 +8,7 @@
 
 <script src="lib/prism.js"></script>
 
-<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/moon_Mcdonals.png); background-attachment: fixed; background-size: cover;">
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/mars_Mcdonals.png); background-attachment: fixed; background-size: cover;">
 
 <div>
   <span style="position: absolute; top: 20px; right: 20px;">
@@ -29,20 +29,23 @@
 
     <story>
       <br><br><br>
-        <h2>Day 22: Moon Landing + Orientation</h2>
+        <h2>Day 22: Mars Landing + Orientation</h2>
         <page intro="">
-            <p>Alright astronaut, we have several ships setup for weeklong stays on the moon for training and research.</p>
-            <p>A lot of tasks require a good handle on getting around on foot on the moon <br>and understanding the gear and supplies you'll need</p>
-            <button choice look-around>So Do I Moonwalk Now?</button>
+            <p>Alright astronaut, today we will move you into your quarters on mars for your stay.</p>
+            <p>There's a lot to be done around here.</p>
+            <button choice stay-put="">What's first?</button>
+            <button choice look-around>Can I See The Farms?</button>
         </page>
-
+        <page stay-put="">
+            <p>It's quite the operation to feed the small village we have here on mars, <br>you'll be on lunch prep for the first 15 meals of your mission.</p>
+            <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" stay-put="">I guess nothing's changed from earth?</button>
+        </page>
         <br>
         <page look-around="">
-          <p>Woah take it easy there friend, you'll get the chance but you did JUST touch down on the moon after all.</p>
-          <p>It's quite the operation to feed the crew up here, <br>you'll be on lunch prep for the first 15 meals of your mission.</p> 
-          <p>Should feel at home with that right?</p>
+          <p>Woah take it easy there friend, you'll get the chance but you did JUST touch down on mars after all.</p>
+          <p>It's quite the operation to feed the small village we have here on mars, <br>you'll be on lunch prep for the first 15 meals of your mission.</p>
 
-          <a href="file:///Users/Meredith/MEGA/Winter%202018/Systems/Narrative_Website/Astronaut/codeRed_Mcdonals.html"><button choice="" look-around="">So...I wander around the moon the rest of the time?</button>
+          <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" look-around="">So...I wander around mars the rest of the time?</button>
         </page>
     </story>
 </body>

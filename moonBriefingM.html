@@ -1,0 +1,96 @@
+<html>
+<title>So, You Want to Be An Astronaut?</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/city_style.css">
+
+
+<script src="lib/prism.js"></script>
+
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/moonBriefing.png); background-attachment: fixed; background-size: cover;">
+
+<div>
+  <span style="position: absolute; top: 20px; right: 20px;">
+  <p>Day 2<p>
+  </span>
+</div>
+
+    <story>
+        <h2>Welcome to Mission Briefing</h2>
+
+        <page id="home" style="display: inline-block; float: left;">
+            <p>Welcome to missions to the moon!</p>
+            <!--<button choice what-is>But what <i>is</i> CYO?</button>
+            <img src="Images/mcdonals.png" style="width: 200px;">!-->
+          </page>
+  </story>
+
+
+    <story>
+      <br><br><br>
+        <h2>Day 2: Mission Specialization</h2>
+        <page intro="">
+            <p>We have three primary areas of research and training on the moon.<br><br>Given your history in the kitchen, we'd recommend setting up ship for <br>the stay but its up to you.</p>
+            <button choice stay-put="">K...What Are All My Choices?</button>
+
+        </page>
+        <page stay-put="">
+            <p>Setting up and mainting camp is a big task that a lot of astronauts work on, <br>being trained and training others for working at reduced gravity, <br>and for those interested in pilot training there are ride alongs for trips between the earth, moon, and mars.</p>
+            <a href="https://meredithjgee.github.io/astronaut/moon_CampM.html"><button>Setup + Management</button>
+            <a href="https://meredithjgee.github.io/astronaut/moon_WalkingM.html"><button>Moonwalking Orientation</button>
+            <a href="https://meredithjgee.github.io/astronaut/moon_PilotingM.html"><button>Piloting Manuevers</button>
+        </page>
+        <page look-around="">
+
+        </page>
+
+    </story>
+</body>
+<style>
+h2 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+<script>
+var i = 0;
+var txt = ""
+//document.getElementById("game_text");
+//for(var i = 0; i < txt.length; i++)
+//{
+//    alert(text[i].innerHTML);
+//}
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("game_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</html>

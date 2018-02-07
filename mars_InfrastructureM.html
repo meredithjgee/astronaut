@@ -1,0 +1,98 @@
+<html>
+<title>So, You Want to Be An Astronaut?</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/city_style.css">
+
+
+<script src="lib/prism.js"></script>
+
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/mars_Mcdonals.png); background-attachment: fixed; background-size: cover;">
+
+<div>
+  <span style="position: absolute; top: 20px; right: 20px;">
+  <p>Day 22<p>
+  </span>
+</div>
+
+    <story>
+        <h2>You've made it.</h2>
+
+        <page id="home" style="display: inline-block; float: left;">
+            <p>Excellent now lets get to work.</p>
+            <!--<button choice what-is>But what <i>is</i> CYO?</button>
+            <img src="Images/mcdonals.png" style="width: 200px;">!-->
+          </page>
+  </story>
+
+
+    <story>
+      <br><br><br>
+        <h2>Day 22: Mars Landing + Orientation</h2>
+        <page intro="">
+            <p>Alright astronaut, today we will move you into your quarters on mars for your stay.</p>
+            <p>There's so much infrastructure to be constructed as we expand on mars.</p>
+            <button choice stay-put="">What's first?</button>
+            <button choice look-around>Can I Meet My Crew?</button>
+        </page>
+        <page stay-put="">
+            <p>It's quite the operation to feed the small village we have here on mars, <br>you'll be on lunch prep for the first 15 meals of your mission.</p>
+            <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" stay-put="">I guess nothing's changed from earth?</button>
+        </page>
+        <br>
+        <page look-around="">
+          <p>Woah take it easy there friend, you'll get the chance but you did JUST touch down on mars after all.</p>
+          <p>It's quite the operation to feed the small village we have here on mars, <br>you'll be on lunch prep for the first 15 meals of your mission.</p>
+
+          <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" look-around="">So...I wander around mars the rest of the time?</button>
+        </page>
+    </story>
+</body>
+<style>
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+<script>
+var i = 0;
+var txt = ""
+//document.getElementById("game_text");
+//for(var i = 0; i < txt.length; i++)
+//{
+//    alert(text[i].innerHTML);
+//}
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("game_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</html>
