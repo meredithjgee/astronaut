@@ -1,0 +1,443 @@
+/* This is a reset to standardize the margins and paddings across browsers */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+background-color: #0F1D2E;
+background-image: url(Images/taxi_background.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;.
+}
+img #storyteller{
+  background-image: url(Images/space.gif);
+}
+page #home{
+    background-color: #fb4f4f;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+
+button {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  border: none;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+button:hover{
+  opacity: 0.5;
+  transition: opacity 0.6s ease-in;
+}
+
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Andale Mono", Helvetica, Arial, sans-serif;
+  color: #bc7cbc;
+}
+
+h5 {
+  font-size: 65px;
+  background: -webkit-linear-gradient(#63a6ed, rgba(254, 183, 51, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #bc7cbc;
+}
+
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav, section {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+section {
+  padding: 50px 20px 50px; /* top, left/right, bottom */
+}
+
+/***
+STORY
+***/
+
+story img{
+  width: 100px;
+  padding-top: 20px;
+  margin: 30px;
+  text-align: left;
+
+}
+
+/***
+HEADER
+***/
+header {
+  background-color: #f8f8f8;
+  background-image: url(purplechurch3.png);
+  background-size: cover;
+  height: 900px;
+  background-position: center;
+
+
+  padding: 20px;
+  /* This is equivalent to what I wrote above:
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px; */
+
+  color: #3b3b3b; /* white */
+}
+
+header a {
+  color: #bc7cbc;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+header a:hover {
+  color: #d6d6d6;
+}
+header a:active{
+  color: #3b3b3b;
+}
+
+nav {
+  text-align: center;
+  max-width: unset;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav .logo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.19em;
+  color: #bc7cbc;
+  padding-top: 7px;
+}
+
+.top-menu {
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style: none;
+  padding: 6px 0px;
+}
+
+.top-menu li {
+  letter-spacing: .05em;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.top-menu li:last-child {
+  margin-right: 0px;
+}
+
+.top-menu.menu-left {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.top-menu.menu-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.header-content {
+  max-width: 700px;
+
+  margin: 100px auto 140px;
+/*  This centers the element
+
+This is equivalent to what I wrote above:
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto; */
+
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.header-content b {
+  color: #f8f8f8;
+  letter-spacing: -0.02em;
+  font-size: 65px;
+}
+/***
+ABOUT ME
+***/
+section p {
+  font-size: 15px;
+  line-height: 2em;
+  letter-spacing: 0.034666667em;
+}
+
+/***
+PROJECTS
+***/
+.projects {
+  max-width: 1200px;
+  text-align: center;
+position: relative;
+}
+
+.projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects li{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.projects li img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.project-block {
+  display: block;
+  background-position: center;
+  background-size: contains;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 250px;
+  position: relative;
+}
+
+.project-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-block:hover .project-text {
+  opacity: 1;
+  transition: opacity 0.6s ease-in;
+}
+
+
+.project1 {
+  background-image: url(Level1.png);
+  background-size: 200px;
+}
+
+.project2 {
+  background-image: url(Level2.png);
+  background-size: 200px;
+}
+.project3 {
+  background-image: url(Level3.png);
+  background-size: 200px;
+}
+
+.project4 {
+  background-image: url(Upgrades.png);
+  background-size: 200px;
+}
+.project4 .project-text {
+  background-color: rgba(230,239,239,0.6);
+}
+
+form {
+  text-align: center;
+}
+/#subscribe {
+    display: block;
+    margin: 20px auto 110px auto;
+
+}
+#subscribe h3 {
+    font-size: 18px;
+    font-family:
+    margin-bottom: 35px;
+    color: #af80af;
+}
+
+#subscribe .text {
+  font-family: "HK Grotesk Pro";
+    padding: 14px;
+    width: 290px;
+    background-color: #7e6396 ;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+
+}
+
+#subscribe .submit {
+    font-family: "HK Grotesk Pro";
+    font-size: 18px;
+    height: 50px;
+    width: 140px;
+    background-color: #af80af;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.game-description {
+  text-align: center;
+}
+
+footer {
+  background-color: #0F1D2E;
+  height: 50px;
+  padding-top: 200px;
+  padding: 20px;
+}
+footer h3 {
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+footer li:last-child{
+  margin-right: 0px;
+}
+
+footer li .email {
+text-decoration: none;
+}
+
+footer a {
+  color: #bc7cbc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d8d8d8;
+  text-decoration: none;
+}
+/***
+UTILITIES
+***/
+.t-c {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+@media screen and (max-width: 1040px) {
+  .project-block {
+    width: 400px;
+    height: 400px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+}
+@media screen and (max-width: 840px) {
+  .project-block {
+    width: 350px;
+    height: 350px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project-block {
+    width: 350px;
+    height: 350px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  .project-block .project-text{
+    color: #ffffff;
+    opacity: 1;
+    background: none;
+    top: unset;
+  }
+  .project-block .project-text h2 {
+    letter-spacing: 0.04em;
+    font-size: 14px;
+  }
+  .header-content {
+    font-size: 35px;
+    margin: 80px 20px;
+    transition: font-size 0.6s ease;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .top-menu.menu-left, .top-menu.menu-right {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+  }
+}
