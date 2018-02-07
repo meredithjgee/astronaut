@@ -1,0 +1,75 @@
+<html>
+<title>So, You Want to Be An Astronaut?</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/city_style.css">
+
+
+<script src="lib/prism.js"></script>
+
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/Mcdonals_background.png); background-attachment: fixed; background-size: cover;">
+
+<div>
+  <span style="position: absolute; top: 20px; right: 20px;">
+  <p>Day 8<p>
+  </span>
+</div>
+<br><br>
+    <story style="text-align: center;">
+        <h2>CRISIS AVERTED!</h2>
+
+        <page id="home" style="display: inline-block;">
+            <p>Well shoot, congrats astronaut you pulled through! <br>We wouldn't have been out of that mess so fast if it weren't for you. </p>
+            <a href="file:///Users/Meredith/MEGA/Winter%202018/Systems/Narrative_Website/Astronaut/index.html"><button>Play Again</button>
+          </page>
+  </story>
+
+</body>
+<style>
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+<script>
+var i = 0;
+var txt = ""
+//document.getElementById("game_text");
+//for(var i = 0; i < txt.length; i++)
+//{
+//    alert(text[i].innerHTML);
+//}
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("game_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</html>

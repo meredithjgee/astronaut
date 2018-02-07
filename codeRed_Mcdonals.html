@@ -1,0 +1,86 @@
+<html>
+<title>So, You Want to Be An Astronaut?</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/city_style.css">
+
+
+<script src="lib/prism.js"></script>
+
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/codeRed_Mcdonals.png); background-attachment: fixed; background-size: cover;">
+
+<div>
+  <span style="position: absolute; top: 20px; right: 20px;">
+  <p>Day 7<p>
+  </span>
+</div>
+
+    <story>
+        <h2>CODE RED ALERT!!!</h2>
+
+        <page id="home" style="display: inline-block; float: left;">
+            <p>The spacecraft has an oxygen leak crew!</p>
+            <!--<button choice what-is>But what <i>is</i> CYO?</button>
+            <img src="Images/mcdonals.png" style="width: 200px;">!-->
+          </page>
+  </story>
+
+
+    <story>
+      <br><br>
+        <h2>Day 7: Pretty Much A Crisis</h2>
+        <page intro="">
+            <p>"Hey McDonalds man, you ever patched a leak?" Let's get to it.</p>
+            <p><i>yeah and can think pretty fast on my feet thanks, lets get this board reset and stop the leak.</i></p>
+            <a href="file:///Users/Meredith/MEGA/Winter%202018/Systems/Narrative_Website/Astronaut/crisis_Averted.html"><button>I'm On It</button>
+        </page>
+    </story>
+</body>
+<style>
+h2 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+<script>
+var i = 0;
+var txt = ""
+//document.getElementById("game_text");
+//for(var i = 0; i < txt.length; i++)
+//{
+//    alert(text[i].innerHTML);
+//}
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("game_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</html>
