@@ -1,0 +1,98 @@
+<html>
+<title>So, You Want to Be An Astronaut?</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/city_style.css">
+
+
+<script src="lib/prism.js"></script>
+
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/deepspaceBriefing.png); background-attachment: fixed; background-size: cover;">
+
+<div>
+  <span style="position: absolute; top: 20px; right: 20px;">
+  <p>Day 2<p>
+  </span>
+</div>
+
+    <story>
+        <h2>Welcome to Mission Briefing</h2>
+
+        <page id="home" style="display: inline-block; float: left;">
+            <p>Welcome to missions in deep space!</p>
+            <!--<button choice what-is>But what <i>is</i> CYO?</button>
+            <img src="Images/mcdonals.png" style="width: 200px;">!-->
+          </page>
+  </story>
+
+
+    <story>
+      <br><br><br>
+        <h2>Day 2: Mission Specialization</h2>
+        <page intro="">
+            <p>We are constantly pushing further in the exploration of new moons, planets, and galaxies.</p>
+            <p>Given your history in the kitchen, we'd recommend looking into Europa <br> where a colony is being setup but its up to you.</p>
+            <button choice stay-put="">K...What Are All My Choices?</button>
+
+        </page>
+        <page stay-put="">
+            <p><br>The three missions on the docket right now are a trip to Callista a nearby galaxy, <br>research and getting a colony planted on Europa, <br>and building a refeuling base at the edge of our galaxy.</p>
+            <p>What's the best fit for you?</p>
+            <a href="https://meredithjgee.github.io/astronaut/deepspace_GalaxyM.html"><button>To Callista</button>
+            <a href="https://meredithjgee.github.io/astronaut/deepspace_EuropaM.html"><button>Colony on Europa</button>
+            <a href="https://meredithjgee.github.io/astronaut/deespace_BaseM.html"><button>Base Construction</button>
+        </page>
+        <page look-around="">
+
+        </page>
+
+    </story>
+</body>
+<style>
+h2 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+<script>
+var i = 0;
+var txt = ""
+//document.getElementById("game_text");
+//for(var i = 0; i < txt.length; i++)
+//{
+//    alert(text[i].innerHTML);
+//}
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("game_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</html>
