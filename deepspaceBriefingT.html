@@ -8,19 +8,19 @@
 
 <script src="lib/prism.js"></script>
 
-<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/deepspace_BackgroundM.png); background-attachment: fixed; background-size: cover;">
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/deepspaceBriefing.png); background-attachment: fixed; background-size: cover;">
 
 <div>
   <span style="position: absolute; top: 20px; right: 20px;">
-  <p>Day 30<p>
+  <p>Day 2<p>
   </span>
 </div>
 
     <story>
-        <h2>You've made it.</h2>
+        <h2>Welcome to Mission Briefing</h2>
 
         <page id="home" style="display: inline-block; float: left;">
-            <p>We've launched! Now to Europa.</p>
+            <p>Welcome to missions in deep space!</p>
             <!--<button choice what-is>But what <i>is</i> CYO?</button>
             <img src="Images/mcdonals.png" style="width: 200px;">!-->
           </page>
@@ -29,33 +29,33 @@
 
     <story>
       <br><br><br>
-        <h2>Day 30: Launch + Setting Course</h2>
+        <h2>Day 2: Mission Specialization</h2>
         <page intro="">
-            <p>Alright astronaut, today we start the trip to Europa.</p>
-            <p>We are stil one of only a few crews to get to touch down on Europe <br>now that we know it supports life.</p>
-            <p>So no pressure yeah?</p>
-            <button choice stay-put="">What's first?</button>
-            <button choice look-around>Can I see the control room?</button>
+            <p>We are constantly pushing further in the exploration of new moons, <br>planets, and galaxies.</p>
+            <p>Given your history behind the wheel, we'd recommend looking into the <br>challenge of getting us to Callista or setting <br>up the new base at the edge of our galaxy.</p>
+            <button choice stay-put="">What Are All My Choices?</button>
+
         </page>
         <page stay-put="">
-            <p>We thought you should be on lunch prep until we touch down on Europa.</p>
-            <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" stay-put="">I guess nothing's changed from earth?</button>
+            <p>The three missions on the docket right now are a trip to Callista a nearby galaxy, <br>research and getting a colony planted on Europa, <br>and building a refeuling base at the edge of our galaxy.</p>
+            <p>What's the best fit for you?</p>
+            <a href="https://meredithjgee.github.io/astronaut/deepspace_GalaxyT.html"><button>To Callista</button>
+            <a href="https://meredithjgee.github.io/astronaut/deepspace_EuropaT.html"><button>Colony on Europa</button>
+            <a href="https://meredithjgee.github.io/astronaut/deepspace_BaseT.html"><button>Base Construction</button>
         </page>
-        <br>
         <page look-around="">
-          <p>Woah take it easy there friend, you'll get the chance but you did JUST get into space after all.</p>
-          <p>We thought you should be on lunch prep until we touch down on Europa.</p>
-          <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" look-around="">So...I wander around the ship?</button>
+
         </page>
+
     </story>
 </body>
 <style>
 h2 {
-  color: #ffffff;
+  color: #000000;
 }
 
 p {
-  color: #ffffff;
+  color: #000000;
 }
 
 story {

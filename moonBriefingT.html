@@ -8,19 +8,19 @@
 
 <script src="lib/prism.js"></script>
 
-<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/deepspace_BackgroundM.png); background-attachment: fixed; background-size: cover;">
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/moonBriefing.png); background-attachment: fixed; background-size: cover;">
 
 <div>
   <span style="position: absolute; top: 20px; right: 20px;">
-  <p>Day 30<p>
+  <p>Day 2<p>
   </span>
 </div>
 
     <story>
-        <h2>You've made it.</h2>
+        <h2>Welcome to Mission Briefing</h2>
 
         <page id="home" style="display: inline-block; float: left;">
-            <p>We've launched! Now to Europa.</p>
+            <p>Welcome to missions to the moon!</p>
             <!--<button choice what-is>But what <i>is</i> CYO?</button>
             <img src="Images/mcdonals.png" style="width: 200px;">!-->
           </page>
@@ -29,33 +29,31 @@
 
     <story>
       <br><br><br>
-        <h2>Day 30: Launch + Setting Course</h2>
+        <h2>Day 2: Mission Specialization</h2>
         <page intro="">
-            <p>Alright astronaut, today we start the trip to Europa.</p>
-            <p>We are stil one of only a few crews to get to touch down on Europe <br>now that we know it supports life.</p>
-            <p>So no pressure yeah?</p>
-            <button choice stay-put="">What's first?</button>
-            <button choice look-around>Can I see the control room?</button>
+            <p>We have three primary areas of research and training on the moon.<br><br>Given your history in behind the wheel, we'd recommend a trajectory <br>towards piloting but its up to you.</p>
+            <button choice stay-put="">Umm K...What Are All My Choices?</button>
+
         </page>
         <page stay-put="">
-            <p>We thought you should be on lunch prep until we touch down on Europa.</p>
-            <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" stay-put="">I guess nothing's changed from earth?</button>
+            <p>Setting up and mainting camp is a big task that a lot of astronauts work on, <br>being trained and training others for working at reduced gravity, <br>and for those interested in pilot training there are ride alongs <br>for trips between the earth, moon, and mars.</p>
+            <a href="https://meredithjgee.github.io/astronaut/moon_CampT.html"><button>Setup + Management</button>
+            <a href="https://meredithjgee.github.io/astronaut/moon_WalkingT.html"><button>Moonwalking Orientation</button>
+            <a href="https://meredithjgee.github.io/astronaut/moon_PilotingT.html"><button>Piloting Manuevers</button>
         </page>
-        <br>
         <page look-around="">
-          <p>Woah take it easy there friend, you'll get the chance but you did JUST get into space after all.</p>
-          <p>We thought you should be on lunch prep until we touch down on Europa.</p>
-          <a href="https://meredithjgee.github.io/astronaut/codeRed_Mcdonals.html"><button choice="" look-around="">So...I wander around the ship?</button>
+
         </page>
+
     </story>
 </body>
 <style>
 h2 {
-  color: #ffffff;
+  color: #000000;
 }
 
 p {
-  color: #ffffff;
+  color: #000000;
 }
 
 story {

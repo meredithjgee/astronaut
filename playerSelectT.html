@@ -1,0 +1,95 @@
+<html>
+<title>So, You Want to Be An Astronaut?</title>
+<script src='bower_components/angular/angular.min.js'></script>
+<script src='js/cyo.js'></script>
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/city_style.css">
+
+
+<script src="lib/prism.js"></script>
+
+
+<body ng-app="cyo" class='container' onLoad="typeWriter()"style="background-image: url(Images/nasa_taxi.png); background-attachment: fixed; background-size: cover;">
+
+  <div>
+    <span style="position: absolute; top: 20px; right: 20px;">
+    <p>Day 1<p>
+    </span>
+  </div>
+
+    <story>
+        <h2>Welcome to The Space Program</h2>
+
+        <page id="home" style="display: inline-block; float: left;">
+            <p>Glad to have you! This crew could use someone with navigation skills. (those translate right?)"
+            </p>
+            <!--<button choice what-is>But what <i>is</i> CYO?</button>
+            <img src="Images/mcdonals.png" style="width: 200px;">!-->
+          </page>
+  </story>
+
+    <story>
+      <br><br><br>
+        <h2>Day 1: Onboarding + Mission Selection</h2>
+        <page intro="">
+            <p>The Space Program's new recruitment and training program is on an extremely short timeline. <br><br>We need astronauts out there ASAP on the new frontiers.</p>
+            <button choice stay-put="">What frontiers?</button>
+        </page>
+        <page stay-put="">
+            <p>We are focusing our efforts on settling mars, research on our moon, <br>and exploring unkown deep space.</p>
+            <p>What mission are you interested in?<br>Where can we best use your taxi man training?" (<i>I mean I've done other things...</i>)</p>
+            <a href="https://meredithjgee.github.io/astronaut/moonBriefingT.html"><button>To The Moon</button>
+            <a href="https://meredithjgee.github.io/astronaut/marsBriefingT.html"><button>Mission to Mars</button>
+            <a href="https://meredithjgee.github.io/astronaut/deepspaceBriefingT.html"><button>Somewhere Far Far Away</button>
+        </page>
+
+    </story>
+</body>
+
+<style>
+h2 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+story {
+    display: block;
+    border:none;
+    /*font-size: 2rem;*/
+    margin: 2rem;
+}
+page {
+    display: block;
+}
+
+body {
+    margin-bottom: 15px;
+}
+
+small {
+    margin-top: 15px;
+}
+</style>
+<script>
+var i = 0;
+var txt = ""
+//document.getElementById("game_text");
+//for(var i = 0; i < txt.length; i++)
+//{
+//    alert(text[i].innerHTML);
+//}
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("game_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</html>
